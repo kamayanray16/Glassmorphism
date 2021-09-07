@@ -271,16 +271,17 @@ main::after {
   height: 100%;
   border: 20px solid;
 
-  border-image-source: url("/designer-frame2.jpg");
+  border-image-source: url("/black-frame.png");
   
   border-image-slice: 15;
 }
 .designer-frame {
-  border-image-source: url("/black-frame.png");
+  border-image-source: url(/ronaldo.jpeg);
   border-image-slice: 15;
 }
 .wooden-frame {
-  border-image-source: url("/wooden-frame11.jpg");
+  /* border-image-source: url("/wooden-frame11.jpg"); */
+  border-image-source: url(/evans.jpeg);
   border-image-slice: 30;
 }
 .white-frame {
