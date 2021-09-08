@@ -30,11 +30,11 @@ main {
 .main-page-btn {
   position: absolute;
   text-align: center;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   top: 50%;
   left: 50%;
   transform: translate(-50%, 350%);
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   width: 270px;
   border-radius: 30px;
   background: rgb(248, 245, 245);
@@ -162,10 +162,11 @@ main::after {
 /* PRODUCTS*/
 .products h2,
 .contact h2,
-.product-details h2 {
+.product-details h2,
+.about h2 {
   text-align: center;
-  font-size: 2.8rem;
-  font-family: 'Dancing Script', cursive;
+  font-size: 3.5rem;
+  font-family: "Dancing Script", cursive;
   color: rgb(0, 0, 0);
 }
 .products a {
@@ -211,7 +212,7 @@ main::after {
   border-radius: 20px;
   height: 40px;
   color: rgb(0, 0, 0);
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-size: 1.4rem;
   width: 200px;
   display: flex;
@@ -253,7 +254,7 @@ main::after {
 
 /* Navbar  */
 header {
-  border-radius: 10px;
+  border-radius: 20px;
   background: rgba(255, 255, 255, 0.25);
   border: 2px solid white;
   margin-bottom: 30px;
@@ -318,7 +319,7 @@ header {
   transition: 0.3s;
 }
 .nav-items {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-size: 2rem;
   margin-bottom: 60px;
 }
@@ -415,12 +416,12 @@ td {
   border: 2px solid rgb(0, 0, 0);
   border-collapse: collapse;
   padding: 10px;
-  background: rgba(255, 255, 255,0.10);
+  background: rgba(255, 255, 255, 0.1);
   color: rgb(8, 8, 8);
   margin: 10px auto;
   text-align: center;
 }
-td{
+td {
   font-weight: 600;
   font-size: 1rem;
 }
@@ -436,8 +437,8 @@ th {
   height: 45px;
   margin-bottom: 10px;
   margin-right: 20px;
-  background: rgba(255, 255, 255,0.9);
-  font-family: 'Dancing Script', cursive;
+  background: rgba(255, 255, 255, 0.9);
+  font-family: "Dancing Script", cursive;
   border: 2px solid rgb(10, 10, 10);
   border-radius: 20px;
   color: rgb(5, 5, 5);
@@ -453,8 +454,7 @@ th {
   font-size: 18px;
   color: rgb(10, 10, 10);
   text-align: justify;
-
-  font-family: "Heebo", sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 .text {
   display: flex;
@@ -469,7 +469,7 @@ th {
   text-align: center;
   border-radius: 20px;
   margin-top: 0px;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 }
 
 hr {
@@ -486,7 +486,6 @@ hr {
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  /* height: 100%; */
 }
 .contact h2 {
   font-size: 2rem;
@@ -499,7 +498,6 @@ hr {
 
 .contact ul li {
   list-style: none;
-  /* margin:0px; */
 }
 .contact ul li a {
   width: 70px;
@@ -510,7 +508,6 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* color: rgb(17, 16, 16); */
   text-decoration: none;
   font-size: 2em;
   backdrop-filter: blur(2px);
@@ -562,12 +559,118 @@ hr {
   display: none;
 }
 
+/* About  */
+.row-about {
+  width: 100%;
+  height: 780px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 20px;
+}
+
+.about-img {
+  flex-basis: 45%;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgb(0, 0, 0);
+  height: 300px;
+
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.about-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: 0px -50px;
+}
+
+.about-details {
+  padding: 20px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  flex-basis: 50%;
+}
+.about-details h3{
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+}
+.about-details hr{
+  height: 4px;
+  width: 100%;
+  background-color: black;
+  margin: 5px;
+}
+.about-details a{
+  height: 100px;
+  width: 100px;
+}
+.about p {
+  margin: 40px 0;
+  font-family: 'Quicksand', sans-serif;
+}
+.about-details p {
+  margin: 20px 0;
+}
+.follow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.follow a{
+text-decoration: none;
+color: white;
+margin: 0;
+}
+.follow h3{
+  font-size: 1.5rem;
+  display: block;
+  padding: 10px 30px;
+  background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+  border-radius: 20px;
+  border: 1px solid rgb(2, 2, 2);
+  color: white;
+  cursor: pointer;
+}
 @media (min-width: 800px) {
   .row {
     display: flex;
+    flex-direction: row;
     height: 420px;
     padding: 20px;
     justify-content: space-around;
+  }
+  .about-img {
+    flex-basis: 35%;
+    height: 320px;
+    margin-bottom: 0;
+    padding: 5px;
+  }
+  .about-details {
+    height: 320px;
+    flex-basis: 60%;
+  }
+  .about-details span{
+    display: none;
+  }
+
+  .row-about {
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-around;
+    background: none;
+    border: none;
+    backdrop-filter: none;
   }
   .box {
     flex-basis: 30%;
@@ -649,7 +752,7 @@ hr {
     border: none;
     margin-bottom: 0;
   }
-  .contact ul li a{
+  .contact ul li a {
     height: 100px;
     width: 100px;
   }

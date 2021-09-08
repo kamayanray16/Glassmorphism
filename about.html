@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/dd4381909d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="glass">
+        <header>
+          <nav class="navbar">
+            <a href="index.html" class="nav-branding">STORE</a>
+            <ul class="nav-menu">
+              <li class="nav-items">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-items">
+                <a href="about.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-items">
+                <a href="Products_page.html" class="nav-link">Products</a>
+              </li>
+              <li class="nav-items">
+                <a href="contact_page.html" class="nav-link">Contact</a>
+              </li>
+            </ul>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </nav>
+        </header>
+        <div class="about">
+          <h2>About</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+            dolore cupiditate eaque soluta nihil? Pariatur ab illo hic
+            consequuntur, deleniti vero officiis dolorum eligendi dolore nam,
+            quo earum autem. Nulla! Lorem, <br />Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Earum blanditiis aut odio iste
+            nesciunt, nam facilis magnam error a soluta excepturi sit cupiditate
+            beatae et totam possimus? Odio, facere dicta.
+          </p>
+          <div class="row-about">
+            <div class="about-img">
+              <img src="images/kamayan_pic.jpg" alt="" />
+            </div>
+            <div class="about-details">
+              <h3>
+                Kamayan Ray <span><br /></span>(Web Developer)
+              </h3>
+              <hr />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+                voluptatum eligendi reiciendis enim labore, possimus delectus
+                veniam, culpa obcaecati error vero! Nam velit inventore
+                assumenda commodi illum! Commodi, neque laborum.<br />
+              </p>
+              <p>Follow us on insta:- kamayanray16</p>
+              <div class="follow">
+                <h3>
+                  <a
+                    href="https://www.instagram.com/kamayanray16/"
+                    target="_blank"
+                    >Instagram</a
+                  >
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="row-about">
+            <div class="about-img">
+              <img src="images/anu_pic.jpg" alt="" />
+            </div>
+            <div class="about-details">
+              <h3>Anurag Anand (Photo Editor)</h3>
+              <hr />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+                voluptatum eligendi reiciendis enim labore, possimus delectus
+                veniam, culpa obcaecati error vero! Nam velit inventore
+                assumenda commodi illum! Commodi, neque laborum.<br />
+              </p>
+              <p>Follow us on insta:- kamayanray16</p>
+              <div class="follow">
+                <h3>
+                  <a
+                    href="https://www.instagram.com/anuraganand972/"
+                    target="_blank"
+                    >Instagram</a
+                  >
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="row-about">
+            <div class="about-img">
+              <img src="images/kamal_pic.jpg" alt="" />
+            </div>
+            <div class="about-details">
+              <h3>Kamal Aggarwal (Manager)</h3>
+              <hr />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+                voluptatum eligendi reiciendis enim labore, possimus delectus
+                veniam, culpa obcaecati error vero! Nam velit inventore
+                assumenda commodi illum! Commodi, neque laborum.<br />
+              </p>
+              <p>Follow us on insta:- kamayanray16</p>
+              <div class="follow">
+                <h3>
+                  <a
+                    href="https://www.instagram.com/kamal_aggarwal04/"
+                    target="_blank"
+                    >Instagram</a
+                  >
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+      const about = document.querySelector(".about");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        about.classList.toggle("hid");
+      });
+    </script>
+  </body>
+</html>
