@@ -588,10 +588,11 @@ hr {
   height: 100%;
   border-radius: 20px;
   object-fit: cover;
-  object-position: 0px -50px;
+  
 }
-.apic{
-  object-position: 0px -60px;
+
+.kapic{
+  object-position: 0px -50px;
 }
 .kpic{
   object-position: 0px 0px;
