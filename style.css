@@ -576,12 +576,10 @@ hr {
 }
 
 .about-img {
- 
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(10px);
   border: 1px solid rgb(0, 0, 0);
-  height: 300px;
-
+  height: 400px;
   border-radius: 20px;
   margin-bottom: 10px;
 }
@@ -648,12 +646,12 @@ hr {
   color: white;
   margin: 0;
 }
-.buy h3{
+.buy h3 {
   font-size: 1.5rem;
   display: block;
   padding: 10px 30px;
   background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
-  
+
   border-radius: 20px;
   border: 1px solid rgb(2, 2, 2);
   color: white;
@@ -661,15 +659,15 @@ hr {
   font-family: "Dancing Script", cursive;
   margin-bottom: 10px;
 }
-.buy h3:nth-child(2){
+.buy h3:nth-child(2) {
   background: linear-gradient(to right, #23f307, #ece7e7);
 }
-.buy p{
+.buy p {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
 }
-.buy-btn{
+.buy-btn {
   background: rgba(255, 255, 255, 0.25);
   border: 1px solid rgb(0, 0, 0);
   backdrop-filter: blur(5px);
@@ -846,7 +844,7 @@ form img {
   .contact ul li {
     margin: 0 50px;
   }
-  
+
   .contact {
     justify-content: space-around;
     height: 450px;
