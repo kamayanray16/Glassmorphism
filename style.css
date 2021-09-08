@@ -163,7 +163,8 @@ main::after {
 .products h2,
 .contact h2,
 .product-details h2,
-.about h2 {
+.about h2,
+.feedback h2 {
   text-align: center;
   font-size: 3.5rem;
   font-family: "Dancing Script", cursive;
@@ -324,7 +325,7 @@ header {
   margin-bottom: 60px;
 }
 .nav-items:nth-child(1) {
-  margin-top: 50px;
+  margin-top: 150px;
 }
 .nav-menu.active {
   left: 0;
@@ -454,7 +455,7 @@ th {
   font-size: 18px;
   color: rgb(10, 10, 10);
   text-align: justify;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 .text {
   display: flex;
@@ -599,40 +600,40 @@ hr {
   border-radius: 20px;
   flex-basis: 50%;
 }
-.about-details h3{
+.about-details h3 {
   text-align: center;
   font-family: "Dancing Script", cursive;
   font-size: 2rem;
 }
-.about-details hr{
+.about-details hr {
   height: 4px;
   width: 100%;
   background-color: black;
   margin: 5px;
 }
-.about-details a{
+.about-details a {
   height: 100px;
   width: 100px;
 }
 .about p {
   margin: 40px 0;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 .about-details p {
   margin: 20px 0;
 }
-.follow{
+.follow {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-.follow a{
-text-decoration: none;
-color: white;
-margin: 0;
+.follow a {
+  text-decoration: none;
+  color: white;
+  margin: 0;
 }
-.follow h3{
+.follow h3 {
   font-size: 1.5rem;
   display: block;
   padding: 10px 30px;
@@ -641,6 +642,83 @@ margin: 0;
   border: 1px solid rgb(2, 2, 2);
   color: white;
   cursor: pointer;
+}
+
+/* Feedback  */
+.feedback-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+form {
+  width: 500px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgb(250, 250, 250);
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+form button {
+  height: 40px;
+  padding: 5px;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 10px;
+}
+form textarea {
+  margin-top: 20px;
+  color: black;
+}
+.rating {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  width: 200px;
+}
+.rating input {
+  display: none;
+}
+.rating label {
+  position: relative;
+  width: 100px;
+  height: 128px;
+  cursor: pointer;
+  transition: 0.5s;
+  filter: grayscale(1);
+  text-align: center;
+  opacity: 0.8;
+  font-size: 1.2rem;
+}
+.rating:hover label {
+  opacity: 0.2;
+}
+.rating input:hover + label,
+.rating input:checked + label {
+  filter: grayscale(0);
+  opacity: 1;
+  width: 160px;
+}
+form img {
+  height: 45px;
+  width: 45px;
+  margin: 0px 5px;
+}
+.name-input {
+  display: flex;
 }
 @media (min-width: 800px) {
   .row {
@@ -660,7 +738,7 @@ margin: 0;
     height: 320px;
     flex-basis: 60%;
   }
-  .about-details span{
+  .about-details span {
     display: none;
   }
 
@@ -747,6 +825,9 @@ margin: 0;
   .nav-items {
     font-size: 2.6rem;
   }
+  .nav-items:nth-child(1) {
+    margin-top: 80px;
+  }
   header {
     background: none;
     border: none;
@@ -755,5 +836,13 @@ margin: 0;
   .contact ul li a {
     height: 100px;
     width: 100px;
+  }
+  .rating {
+    width: 100%;
+  }
+  form img {
+    height: 60px;
+    width: 60px;
+    margin: 0;
   }
 }

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .rating{
+            position: relative;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+            width: 100%;
+        }
+        .rating input{
+            display: none;
+        }
+        .rating label{
+            position: relative;
+            width: 100px;
+            height: 128px;
+            cursor: pointer;
+            transition: 0.5s;
+            filter: grayscale(1);
+            text-align: center;
+            opacity: 0.7;
+        }
+        .rating:hover label{
+            opacity: 0.2;
+        }
+        .rating input:hover + label,.rating input:checked + label{
+            filter: grayscale(0);
+            opacity: 1;
+            width: 160px;
+        }
+        img{
+            height: 50px;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="rating">
+        <input type="radio" name="star" id="star1" checked="checked">
+        <label for="star1">
+            <img src="images/cool.png">
+            <h4>Loved It</h4>
+        </label>
+        <input type="radio" name="star" id="star2">
+        <label for="star2">
+            <img src="images/surprised.png">
+            <h4>Liked It</h4>
+        </label>
+        <input type="radio" name="star" id="star3">
+        <label for="star3">
+            <img src="images/sweating.png">
+            <h4>It's Ok</h4>
+        </label>
+        <input type="radio" name="star" id="star4">
+        <label for="star4">
+            <img src="images/pressure.png">
+            <h4>Disliked It</h4>
+        </label>
+        <input type="radio" name="star" id="star5">
+        <label for="star5">
+            <img src="images/ugly.png">
+            <h4>Hated It</h4>
+        </label>
+
+    </div>
+</body>
+</html>
