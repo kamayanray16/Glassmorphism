@@ -13,7 +13,7 @@
     />
     <title>Feedback-Page</title>
   </head>
-
+  <body>
     <main>
       <section class="glass">
         <header>
@@ -100,14 +100,7 @@
                 <h2>Thanks for you feedback..</h2>
                 <hr />
               </div>
-              <div class="card">
-                <div>
-                  <h1 class="inputDetails"></h1>
-                  <hr />
-                </div>
-                <p class="inputDetails"></p>
-                <p style="text-align: center">&#128515;</p>
-              </div>
+              <h1 class="inputDetails"></h1>
               <a href="Products_page.html"
                 ><button style="font-size: 1.5rem">Product</button></a
               >
@@ -134,9 +127,7 @@
         const nameInput = document
           .getElementById("nameInput")
           .value.toUpperCase();
-        const textareaInput = document.getElementById("textareaInput").value;
-        inputDetails[0].innerHTML = nameInput;
-        inputDetails[1].innerHTML = textareaInput;
+        inputDetails[0].innerHTML = nameInput + " &#128512;";
         f.classList.add("form-hid");
         suc.classList.remove("form-hid");
       });
