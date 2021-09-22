@@ -20,7 +20,6 @@
 /* Main Page  */
 main {
   min-height: 100vh;
-  /* background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045); */
   background: linear-gradient(to right top, #65dfc9, #6cdbeb);
   display: flex;
   justify-content: center;
@@ -337,17 +336,16 @@ header {
   height: 100%;
   border: 20px solid;
 
-  border-image-source: url(images/black-frame.png);
+  border-image-source: url(/images/black-frame.png);
 
   border-image-slice: 15;
 }
 .designer-frame {
-  border-image-source: url(images/designer-frame2.jpg);
+  border-image-source: url(/images/designer-frame2.jpg);
   border-image-slice: 15;
 }
 .wooden-frame {
-  border-image-source: url(images/wooden-frame11.jpeg);
-  /* border-image-source: url(/evans.jpeg); */
+  border-image-source: url(/images/wooden-frame11.jpeg);
   border-image-slice: 30;
 }
 .white-frame {
@@ -588,13 +586,12 @@ hr {
   height: 100%;
   border-radius: 20px;
   object-fit: cover;
-  
 }
 
-.kapic{
+.kapic {
   object-position: 0px -50px;
 }
-.kpic{
+.kpic {
   object-position: 0px 0px;
 }
 .about-details {
@@ -693,7 +690,7 @@ hr {
   margin-top: 30px;
   padding: 10px;
 }
-form {
+.form {
   width: 500px;
   height: 600px;
   display: flex;
@@ -710,19 +707,64 @@ form {
   font-size: 1.8rem;
   font-weight: bold;
 }
-form button {
+.suc {
+  width: 400px;
+  height: 500px;
+}
+.suc h2 {
+  font-size: 1.9rem;
+}
+
+
+.card{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  /* justify-content: space-around; */
+  /* margin: 20px; */
+  align-items: center;
+  flex-direction: column;
+  border: 2px dotted black;
+  margin: 50px;
+  border-radius: 20px;
+}
+.suc p {
+  font-size: 1.5rem;
+  width: 100%;
+  padding: 20px;
+  overflow-y: auto;
+  text-align: justify;
+  margin: 20px;
+}
+.suc h1 {
+  margin-top: 20px;
+  font-size: 1.8rem;
+  color: black;
+}
+.suc hr {
+  height: 4px;
+  width: 100%;
+  background-color: black;
+  margin: 5px;
+}
+.form-hid {
+  display: none;
+}
+.form button {
   height: 40px;
   padding: 5px;
   text-align: center;
   font-family: "Dancing Script", cursive;
   font-size: 1.2rem;
   font-weight: bold;
+  cursor: pointer;
   border-radius: 10px;
 }
-form textarea {
+.form textarea {
   margin-top: 20px;
   color: black;
 }
+
 .rating {
   position: relative;
   display: flex;
@@ -753,7 +795,7 @@ form textarea {
   opacity: 1;
   width: 160px;
 }
-form img {
+.form img {
   height: 45px;
   width: 45px;
   margin: 0px 5px;
@@ -775,10 +817,10 @@ form img {
     margin-bottom: 0;
     padding: 5px;
   }
-  .apic{
+  .apic {
     object-position: 0px -50px;
   }
-  .kpic{
+  .kpic {
     object-position: 0px -50px;
   }
   .about-details {
@@ -888,7 +930,7 @@ form img {
   .rating {
     width: 100%;
   }
-  form img {
+  .form img {
     height: 60px;
     width: 60px;
     margin: 0;

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Feedback-Page</title>
+  </head>
+  <body>
+    <main>
+      <section class="glass">
+        <header>
+          <nav class="navbar">
+            <a href="/pages/index.html" class="nav-branding">STORE</a>
+            <ul class="nav-menu">
+              <li class="nav-items">
+                <a href="/pages/index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-items">
+                <a href="/pages/about.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-items">
+                <a href="/pages/Products_page.html" class="nav-link">Products</a>
+              </li>
+              <li class="nav-items">
+                <a href="/pages/feedback.html" class="nav-link">Feedback</a>
+              </li>
+              <li class="nav-items">
+                <a href="/pages/contact_page.html" class="nav-link">Contact</a>
+              </li>
+            </ul>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </nav>
+        </header>
+        <div class="feedback">
+          <h2>FEEDBACK</h2>
+          <div class="feedback-page">
+            <div class="form f">
+              <div class="name-input">
+                <label for="name">Name:-</label>
+                <input
+                  type="text"
+                  id="nameInput"
+                  placeholder="Enter your name"
+                /><br />
+              </div>
+              <div class="text-input">
+                <label for="feed">Enter your feedback:-</label><br />
+                <textarea
+                  id="textareaInput"
+                  placeholder="We will love to know your feedback"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+
+              <div class="rating">
+                <input type="radio" name="star" id="star1" checked="checked" />
+                <label for="star1">
+                  <img src="/images/cool.png" />
+                  <h4>Loved It</h4>
+                </label>
+                <input type="radio" name="star" id="star2" />
+                <label for="star2">
+                  <img src="/images/surprised.png" />
+                  <h4>Liked It</h4>
+                </label>
+                <input type="radio" name="star" id="star3" />
+                <label for="star3">
+                  <img src="/images/sweating.png" />
+                  <h4>It's Ok</h4>
+                </label>
+                <input type="radio" name="star" id="star4" />
+                <label for="star4">
+                  <img src="/images/pressure.png" />
+                  <h4>Disliked It</h4>
+                </label>
+                <input type="radio" name="star" id="star5" />
+                <label for="star5">
+                  <img src="/images/ugly.png" />
+                  <h4>Hated It</h4>
+                </label>
+              </div>
+              <button class="sub">Submit</button>
+            </div>
+
+            <div class="form suc form-hid">
+              <div>
+                <h2>Thanks for you feedback..</h2>
+                <hr />
+              </div>
+              <div class="card">
+                <div>
+                  <h1 class="inputDetails"></h1>
+                  <hr />
+                </div>
+                <p class="inputDetails"></p>
+                <p style="text-align: center">&#128515;</p>
+              </div>
+              <a href="/pages/Products_page.html"
+                ><button style="font-size: 1.5rem">Product</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+      const feedback = document.querySelector(".feedback");
+      const f = document.querySelector(".f");
+      const suc = document.querySelector(".suc");
+      const subBtn = document.querySelector(".sub");
+      const inputDetails = document.querySelectorAll(".inputDetails");
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        feedback.classList.toggle("hidden");
+      });
+
+      subBtn.addEventListener("click", () => {
+        const nameInput = document
+          .getElementById("nameInput")
+          .value.toUpperCase();
+        const textareaInput = document.getElementById("textareaInput").value;
+        inputDetails[0].innerHTML = nameInput;
+        inputDetails[1].innerHTML = textareaInput;
+        f.classList.add("form-hid");
+        suc.classList.remove("form-hid");
+      });
+    </script>
+  </body>
+</html>
