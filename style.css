@@ -192,7 +192,7 @@ main::after {
   width: 100%;
   height: 100%;
   border-radius: 20px;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 .sub-box {
   background: rgba(255, 255, 255, 0.25);
@@ -251,6 +251,10 @@ main::after {
   height: 550px;
   margin-top: 30px;
 }
+.bor{
+  border: 2.5px solid rgb(255, 255, 255);
+}
+
 
 /* Navbar  */
 header {
@@ -720,6 +724,11 @@ hr {
   font-size: 2.5rem;
   color: black;
   text-align: center;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border: 2px dotted rgb(12, 12, 12);
+  border-radius: 20px;
 }
 .suc hr {
   height: 4px;
@@ -847,10 +856,13 @@ hr {
   }
   .boxC {
     flex-basis: 48%;
-    height: 750px;
+    height: 700px;
     padding: 15px;
     width: 500px;
     margin-top: 0;
+  }
+  .swiper-slide img{
+    object-fit: initial;
   }
   .ab {
     height: 900px;
