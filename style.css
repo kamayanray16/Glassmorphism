@@ -370,6 +370,7 @@ header {
   background-position: center;
 }
 
+
 .mySwiper2 {
   height: 80%;
   width: 101%;
@@ -846,7 +847,7 @@ hr {
   }
   .boxC {
     flex-basis: 48%;
-    height: 650px;
+    height: 750px;
     padding: 15px;
     width: 500px;
     margin-top: 0;
