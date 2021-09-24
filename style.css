@@ -52,7 +52,7 @@ main {
   border-radius: 30px;
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-  border: 1px solid rgb(250, 250, 250);
+  border: 1px solid rgb(0, 0, 0);
   backdrop-filter: blur(5px);
   z-index: 12;
   scroll-behavior: smooth;
@@ -200,7 +200,7 @@ main::after {
   border: 1px solid rgb(12, 12, 12);
   border-radius: 20px;
   height: 360px;
-  padding: 7px;
+  /* padding: 7px; */
   width: 100%;
 }
 .box h3 {
@@ -246,19 +246,18 @@ main::after {
 }
 .boxC {
   width: 100%;
-  height: 600px;
+  height: 570px;
   margin-top: 30px;
 }
-.bor{
+.bor {
   border: 2.5px solid rgb(255, 255, 255);
 }
-
 
 /* Navbar  */
 header {
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.25);
-  border: 2px solid white;
+  border: 2px solid rgb(0, 0, 0);
   margin-bottom: 30px;
 }
 .navbar li {
@@ -295,7 +294,7 @@ header {
 
   height: 3px;
   margin: 5px auto;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
 }
 .hamburger.active .bar:nth-child(2) {
   opacity: 0;
@@ -371,7 +370,6 @@ header {
   background-size: cover;
   background-position: center;
 }
-
 
 .mySwiper2 {
   height: 80%;
@@ -668,6 +666,9 @@ hr {
 .buy h3:nth-child(2) {
   background: linear-gradient(to right, #23f307, #ece7e7);
 }
+.buy h3:nth-child(3) {
+  background: #0088cc;
+}
 .buy p {
   font-size: 20px;
   font-weight: bold;
@@ -833,7 +834,7 @@ hr {
     display: block;
   }
   .sub-box {
-    padding: 7px;
+    /* padding: 7px; */
     height: 85%;
   }
   .glass {
@@ -841,6 +842,7 @@ hr {
     padding: 20px;
     margin-top: 30px;
     width: 90%;
+    border: 1px solid rgb(255, 255, 255);
   }
   .box h3 {
     margin-left: 20%;
@@ -859,11 +861,11 @@ hr {
     width: 500px;
     margin-top: 0;
   }
-  .swiper-slide img{
+  .swiper-slide img {
     object-fit: initial;
   }
   .ab {
-    height: 900px;
+    height: 970px;
   }
   table,
   th,
