@@ -322,7 +322,7 @@ header {
 .nav-items {
   font-family: "Dancing Script", cursive;
   font-size: 2rem;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 .nav-items:nth-child(1) {
   margin-top: 150px;
